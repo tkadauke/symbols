@@ -6,6 +6,10 @@ class Numeric
   def ≈(other)
     (self - other).abs <= ϵ
   end
+  
+  def ≉(other)
+    !(self.≈(other))
+  end
 end
 
 class Object

@@ -24,4 +24,9 @@ class RootTest < Test::Unit::TestCase
     assert_equal 2, ⁴√(16)
     assert_equal 2, ⁵√(32)
   end
+  
+  def test_should_define_root_shortcuts
+    assert_equal 2, ∛(8)
+    assert_equal 2, ∜(16)
+  end
 end

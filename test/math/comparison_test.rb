@@ -21,7 +21,11 @@ class ComparisonTest < Test::Unit::TestCase
   end
   
   def test_should_define_approximate_equality_operator
-    assert 3.≈(3)
-    assert ϵ.≈(0.0)
+    assert 3.≈ 3
+    assert ϵ.≈ 0.0
+  end
+  
+  def test_should_define_not_approximate_equality_operator
+    assert π.≉ 3
   end
 end

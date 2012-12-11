@@ -13,4 +13,7 @@ module Kernel
       val ** (1.0 / (index + 1).to_f)
     end
   end
+  
+  alias ∛ ³√
+  alias ∜ ⁴√
 end
