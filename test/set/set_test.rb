@@ -12,6 +12,10 @@ class SetTest < Test::Unit::TestCase
     assert ! [1,2,3].∃ { |x| x % 14 == 0 }
   end
   
+  def test_should_define_not_exist
+    assert [1,2,3].∄ { |x| x % 2 == 37 }
+  end
+  
   def test_should_define_subset
     assert [1,2,3].⊆([1,2,3,4,5])
     assert [1,2,3].⊆([1,2,3])
@@ -47,6 +51,10 @@ class SetTest < Test::Unit::TestCase
   def test_should_define_difference
     assert_equal [1], [1,2,5].∖([2,5,6])
     assert_equal [1,2,5], [1,2,5].∖([4,9,10])
+  end
+  
+  def test_should_calculate_sum
+    assert_equal 10, [1,2,3,4].∑
   end
   
   def test_should_return_if_element_is_in_container

@@ -2,6 +2,10 @@
 module Enumerable
   alias ∀ all?
   alias ∃ find
+  
+  def ∄(&block)
+    !∃(&block)
+  end
 end
 
 class Array
@@ -24,6 +28,10 @@ class Array
   alias ∪ |
   alias ∩ &
   alias ∖ -
+  
+  def ∑
+    inject(0) { |mem, var| mem += var }
+  end
 end
 
 class Object
