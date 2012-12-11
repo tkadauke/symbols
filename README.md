@@ -2,7 +2,7 @@
 
 This small library defines constants, aliases and some originial math functionality for a lot of UTF-8 symbols and combinations thereof.
 
-Warning: This gem pollutes the Kernel module and extends built-in classes. If you don't like that, don't use it.
+Warning ⚠: This gem pollutes the Kernel module and extends built-in classes. If you don't like that, don't use it.
 
 ## install ☐
 
@@ -102,7 +102,7 @@ Common set operators are defined:
 
 ### number sets 𝕐
 
-The following sets are defined (Warning: These are not just capital letters; they are the double-struck capital letters you know from math lessons):
+The following sets are defined (Warning ⚠: These are not just capital letters; they are the double-struck capital letters you know from math lessons):
 
     ℤ - Integers
     ℕ - Positive integers
